@@ -1,0 +1,8 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# byobu
+install "byobu"
+
+sudo apt-get install byobu

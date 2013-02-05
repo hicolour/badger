@@ -1,0 +1,8 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# 7z
+install "7z"
+
+sudo apt-get install p7zip-full

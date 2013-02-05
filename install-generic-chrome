@@ -1,0 +1,20 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# chrome
+install "chrome"
+chrome_installed="/tmp/badger/chrome_installed"
+if [ -f "$chrome_installed" ]
+then
+	info "chrome already installed"
+else
+	cd /tmp
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo apt-get install libnss3-1d
+	sudo dpkg -i google-chrome-stable_current_amd64.deb
+	sudo apt-get install -f
+fi
+
+
+

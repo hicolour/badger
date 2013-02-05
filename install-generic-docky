@@ -1,0 +1,16 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# docky
+install "docky"
+#chrome_installed="/tmp/badger/chrome_installed"
+if [ -f "$chrome_installed" ]
+then
+	info "chrome already installed"
+else
+	sudo apt-get install docky
+fi
+
+
+

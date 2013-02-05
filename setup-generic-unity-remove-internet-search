@@ -1,0 +1,10 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# unity themes
+setup "remove internet search"
+
+sudo apt-get remove unity-lens-shopping
+sudo apt-get remove unity-scope-video-remote
+sudo apt-get remove unity-scope-musicstores

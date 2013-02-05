@@ -1,0 +1,8 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# alien
+install "alien"
+
+sudo apt-get install alien dpkg-dev debhelper build-essential

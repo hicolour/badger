@@ -1,0 +1,27 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# unity themes
+setup "unity themes"
+
+#GTK theme:
+gsettings set org.gnome.desktop.interface gtk-theme "Gnome-Cupertino-unity"
+
+#Metacity: 
+gsettings set org.gnome.desktop.wm.preferences theme "Gnome-Cupertino-unity"
+
+#Icons: 
+gsettings set org.gnome.desktop.interface icon-theme "Faience-Azur"
+
+#Unity hide
+gsettings set com.canonical.Unity3d.Launcher hide-mode 2
+
+# Disable overlay Scrollbars:
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
+
+gsettings set org.gnome.desktop.interface document-font-name 'Sans 9'
+gsettings set org.gnome.desktop.interface font-name 'Ubuntu 9'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 10'
+gsettings set org.gnome.nautilus.desktop font 'Ubuntu 9'
+gconftool --set /apps/metacity/general/titlebar_font 'Ubuntu Bold 9' --type STRING

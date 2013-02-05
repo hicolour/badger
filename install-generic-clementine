@@ -1,0 +1,10 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# clementine
+install "clementine"
+
+sudo add-apt-repository ppa:me-davidsansome/clementine
+sudo apt-get update
+sudo apt-get install clementine

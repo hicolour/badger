@@ -1,0 +1,33 @@
+#!/bin/sh
+
+color() {
+      printf '\033[%sm%s\033[m\n' "$@"
+      # usage color "31;5" "string"
+      # 0 default
+      # 5 blink, 1 strong, 4 underlined
+      # fg: 31 red,  32 green, 33 yellow, 34 blue, 35 purple, 36 cyan, 37 white
+      # bg: 40 black, 41 red, 44 blue, 45 purple
+      }
+line(){
+	echo ------------------------------------------------------------------
+}
+install(){
+	line	
+	color '32;1' "install : $@"
+	line
+	}
+setup(){
+	line
+	color '34;1' "setup : $@" 
+	line
+	}
+error(){	
+	color '31;1' "error : $@"
+	}
+
+info(){
+	color '33;1' "info : $@"
+	}
+
+
+

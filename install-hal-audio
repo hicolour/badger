@@ -1,0 +1,10 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# chrome
+install "audio hall"
+
+sudo add-apt-repository ppa:ubuntu-audio-dev
+sudo apt-get update
+sudo apt-get dist-upgrade

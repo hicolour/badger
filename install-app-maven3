@@ -1,0 +1,18 @@
+#!/bin/sh
+
+. ~/badger/zclude
+
+# maven3
+install "maven3"
+
+cd /tmp
+wget http://ftp.ps.pl/pub/apache/maven/maven-3/3.0.4/binaries/apache-maven-3.0.4-bin.tar.gz
+tar -zxf apache-maven-3.0.4-bin.tar.gz
+
+sudo rm -rf /opt/apache-maven-3.0.4
+sudo rm -rf /opt/mvn
+sudo rm -rf /usr/local/bin/mvn
+
+sudo mv apache-maven-3.0.4 /opt
+sudo ln -s /opt/apache-maven-3.0.4 /opt/mvn
+sudo ln -s /opt/mvn/bin/mvn /usr/local/bin/mvn
